@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.centerBody1 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+

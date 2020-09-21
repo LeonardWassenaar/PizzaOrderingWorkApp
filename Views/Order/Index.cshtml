@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/OrderingScript.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Site.css"  />
+</head>
+
+@model IEnumerable<PizzaOrderingWorkApp.Models.Order>
+<body data-ng-app="OrderingScript" >
+    
+    <div class="container" data-ng-controller="orderControl">
+        <h1 class="centerBody1 text-black-50">Place Your Order</h1>
+        <table class="table table-dark table-striped " >
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.DeveloperName)</th>
+                <th>@Html.DisplayNameFor(m => m.Pizza)</th>
+                <th>@Html.DisplayNameFor(m => m.Drink)</th>
+                <th>@Html.DisplayNameFor(m => m.Cur_Date)</th>
+            </tr>
+            <tr data-ng-repeat="ordr in orders">
+                <td>{{ordr.DeveloperName}}</td>
+                <td>{{ordr.Pizza}}</td>
+                <td>{{ordr.Drink}}</td>
+                <td>{{ordr.Cur_Date}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
