@@ -24,8 +24,51 @@ textarea {
 }
 
 .centerBody1 {
-    margin: auto;
-    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     padding: 10px;
+    text-align: center;
 }
 
+.tableAlignRight{
+    text-align:right
+}
+
+.bodyBackground {
+    color: green;
+ }
+
+.sizedText {
+    width: 150px;
+    height: 30px;
+    padding: 1px
+}
+
+.headingFontStyle{
+    font-family:Impact
+}
+
+.mainHeading {
+    color: orange;
+    font-size: 50px;
+    text-align: center;
+    background-color: #454d55;
+    width: 100%;
+    border-style: solid;
+    border-color: orange
+}
+
+.smallHeading {
+    color: orange;
+}
+
+.buttonSubmit {
+    background-color: orange;
+    color: #383838;
+    font-family: Impact
+}
+
+    .buttonSubmit:hover {
+        transform: scale(1.2)
+    }

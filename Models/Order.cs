@@ -12,23 +12,24 @@ namespace PizzaOrderingWorkApp.Models
 {
     public class Order
     {
-        [Key]
+       
         public int OrderId { get; set; }
 
         [DisplayName("Name")]
-        [Required(ErrorMessage = "This field is required.")]
-         public string DeveloperName { get; set; }
+        //[Required(ErrorMessage = "This field is required.")]
+         public string DeveloperName { get; 
+            set; }
 
-  
         [DisplayName("Pizza")]
-        [Required(ErrorMessage = "This field is required.")]
+        //[Required(ErrorMessage = "This field is required.")]
         public string Pizza { get; set; }
 
         [DisplayName("Drink")]
-        [Required(ErrorMessage = "This field is required.")]
+        //[Required(ErrorMessage = "This field is required.")]
         public string Drink  { get; set; }
 
         [DisplayName("Date")]
+        //[Required(ErrorMessage = "This field is required.")]
         public string Cur_Date { get; set; }
     }
 }
