@@ -28,13 +28,13 @@
             <table class="table table-dark table-striped rounded table-borderless">
                 <tr>
                     <td class="smallHeading">Name:</td>
-                   <td align="left"> <input class="form-group sizedText" id="Name" type="text" name="order.DeveloperName" data-ng-model="order.DeveloperName" /></td>
+                   <td align="left"> <input autofocus class="form-group sizedText rounded" id="Name" type="text" name="order.DeveloperName" data-ng-model="order.DeveloperName" /></td>
                 </tr>
                 
                 <tr>
                     <td class="smallHeading">Pizza:</td>
                     <td align="left">
-                        <select  class="form-group sizedText" id="Pizza" type="" name="order.Pizza" data-ng-model="order.Pizza">
+                        <select  class="form-group sizedText rounded" id="Pizza" type="" name="order.Pizza" data-ng-model="order.Pizza">
                             <option value="Bacon">Bacon</option>
                             <option value="Onion">Onion</option>
                             <option value="Cheese">Cheese</option>
@@ -46,7 +46,7 @@
                 <tr>
                     <td class="smallHeading">Drink:</td>
                     <td align="left">
-                        <select class="form-group sizedText" id="Drink" type="text" name="order.Drink" data-ng-model="order.Drink">
+                        <select class="form-group sizedText rounded" id="Drink" type="text" name="order.Drink" data-ng-model="order.Drink">
                             <option value="Fanta">Fanta</option>
                             <option value="Coke">Coke</option>
                             <option value="Sprite">Sprite</option>
@@ -57,11 +57,11 @@
 
                 <tr>
                     <td class="smallHeading">Date:</td>
-                    <td align="left"><input class="form-group sizedText" id="Date" type="date" name="order.Cur_Date" data-ng-model="order.Cur_Date" /></td>
+                    <td align="left"><input class="form-group sizedText rounded" id="date" type="text"  name="order.Cur_Date" data-ng-model="order.Cur_Date" data-ng-init="order.Cur_Date='@ViewData["CurrentDate"]'" disabled /></td>
                 </tr>
 
                 <tr>
-                    <td align="right"><input class="rounded buttonSubmit" type="button" value="SUBMIT" name="btnSubmit" data-ng-click="savedata(order)" /> </td>
+                    <td align="right"><input class="rounded buttonSubmit rounded" type="button" value="SUBMIT" name="btnSubmit" data-ng-click="savedata(order)" /> </td>
 
                     <td align="left">
                         <button class="buttonSubmit rounded" type="button" onclick="ClearFields();">
@@ -87,7 +87,7 @@
                 <td>{{ordr.DeveloperName}}</td>
                 <td>{{ordr.Pizza}}</td>
                 <td>{{ordr.Drink}}</td>
-                <td>{{ordr.Cur_Date}}</td>
+                <td>{{ordr.Cur_Date | date: 'MMM d, y' : 'UCT'}}</td>
             </tr>
         </table>
     </div>
@@ -95,6 +95,7 @@
 </html>
 
 <script>
+   
     function ClearFields() {
         document.getElementById("Name").value = "";
         document.getElementById("Pizza").value = "";

@@ -30,6 +30,7 @@ namespace PizzaOrderingWorkApp.Models
 
         [DisplayName("Date")]
         //[Required(ErrorMessage = "This field is required.")]
-        public string Cur_Date { get; set; }
+        public string Cur_Date { get ; set; }
+     
     }
 }
