@@ -1,5 +1,0 @@
-Developer Name                                    Pizza                         Drink                         Previous Order Date                     Total Orders
-Leo                                               Cheese                        Sprite                        2020/09/24 17:42:06                     10 
-Leo                                               Bacon                         Fanta                         2020/09/24 17:45:11                     11 
-John                                              Onion                         Coke                          2020/09/24 17:26:32                     2  
-John                                              Bacon                         Pepsi                         2020/09/24 17:45:28                     3  

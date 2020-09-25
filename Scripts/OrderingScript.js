@@ -25,5 +25,5 @@ order.controller('orderControl', function ($scope, $http) {
         }, function errorCallback(response) {
             alert(response);
         })
-     }      
+    }      
 });
