@@ -13,7 +13,7 @@
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/OrderingScript.js"></script>
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
-    <link rel="stylesheet" href="~/Content/Site.css"  />
+    <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
 
 @model IEnumerable<PizzaOrderingWorkApp.Models.Order>
@@ -51,11 +51,11 @@
                     <tr>
                         <td class="smallHeading">Drink:</td>
                         <td align="left">
-                            <select class="form-group sizedText rounded" id="Drink" type="text" name="order.Drink" data-ng-model="order.Drink" ng-required="true">
-
+                            <select class="form-control sizedText rounded" id="Drink" type="text" name="order.Drink" data-ng-model="order.Drink" ng-required="true">
                                 <option value="Coke">Coke</option>
                                 <option value="Sprite">Sprite</option>
                                 <option value="Pepsi">Pepsi</option>
+                                <option value="Fanta">Fanta</option>
                             </select>
 
                         </td>
@@ -67,7 +67,7 @@
                     </tr>
 
                     <tr>
-                        <td align="right"><input class="rounded buttonSubmit form-group" type="submit" id="submitButton" value="SUBMIT" name="btnSubmit" data-ng-click="savedata(order)" /> </td>
+                        <td align="right"><input class="rounded buttonSubmit form-group" type="submit" id="submitButton" value="SUBMIT" name="btnSubmit" onclick="ConfirmOrder();" data-ng-click="savedata(order)"/> </td>
 
                         <td align="left">
                             <button class="buttonSubmit rounded" type="button" onclick="ClearFields();">
@@ -107,7 +107,20 @@
     function ClearFields() {
         document.getElementById("Name").value = "";
         document.getElementById("Pizza").value = "";
-        document.getElementById("Drink").value = "";
-       
+        document.getElementById("Drink").value = "";    
     }
+        function ConfirmOrder() {
+
+            var piz = document.getElementById('Pizza');
+            var drk = document.getElementById('Drink');
+
+
+            var resultPizza = piz.options[piz.selectedIndex].text.length;
+            var resultDrink = drk.options[drk.selectedIndex].text.length;
+
+            if (document.getElementById("Name").value.length == 0 || resultPizza < 1 || resultDrink < 1)
+            {
+                window.alert('Please fill out all required fields');
+            }       
+        }
 </script>

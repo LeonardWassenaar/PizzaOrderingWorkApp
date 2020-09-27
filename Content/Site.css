@@ -69,6 +69,14 @@ textarea {
     font-family: Impact
 }
 
-    .buttonSubmit:hover {
-        transform: scale(1.2)
-    }
+.buttonSubmit:hover {
+  transform: scale(1.2)
+ }
+
+.buttonload {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 16px;
+}

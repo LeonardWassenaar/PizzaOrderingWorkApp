@@ -16,8 +16,7 @@ namespace PizzaOrderingWorkApp.Models
         public int OrderId { get; set; }
 
         [DisplayName("Name")]
-         public string DeveloperName { get; 
-            set; }
+         public string DeveloperName { get; set; }
 
         [DisplayName("Pizza")]
         public string Pizza { get; set; }

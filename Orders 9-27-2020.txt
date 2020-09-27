@@ -1,0 +1,20 @@
+Developer Name:               Pizza:              Drink:              Previous Order Date:     Total Orders:
+Leonard                       Onion               Sprite              2020/09/27 11:30:16      1  
+Leonard                       Bacon               Sprite              2020/09/27 11:30:16      2  
+Peter                         Bacon               Coke                2020/09/27 11:31:50      1  
+Leo                           Bacon               Sprite              2020/09/25 19:00:00      4  
+Leo                           Onion               Pepsi               2020/09/27 11:33:51      5  
+Leo                           Cheese              Sprite              2020/09/27 11:46:29      6  
+Leonard                       Onion               Sprite              2020/09/27 11:30:36      3  
+Leonard                       Onion               Pepsi               2020/09/27 11:49:41      4  
+Leonard                       Onion               Sprite              2020/09/27 12:01:59      6  
+Leo                           Bacon               Coke                2020/09/27 11:54:32      9  
+Leo                           Bacon               Coke                2020/09/27 12:30:42      16 
+Leo                           Bacon               Sprite              2020/09/27 13:09:04      17 
+Leonard                       Onion               Fanta               2020/09/27 12:02:31      7  
+Leonard                       BaconCheese         Pepsi               2020/09/27 13:21:15      8  
+Leo                           Cheese              Pepsi               2020/09/27 13:20:44      18 
+Leonard                       Cheese              Pepsi               2020/09/27 13:21:42      9  
+Leonard                       Cheese              Pepsi               2020/09/27 13:48:36      10 
+Leonard                       Bacon               Coke                2020/09/27 13:48:36      11 
+Leonard                       Onion               Coke                2020/09/27 13:49:12      12 
