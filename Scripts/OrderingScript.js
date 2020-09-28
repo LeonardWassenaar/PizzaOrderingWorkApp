@@ -17,8 +17,7 @@ order.controller('orderControl', function ($scope, $http) {
             method: 'post',
             url: '/Order/saveOrder',
             dataType: "json",
-            data: { order: _order}
- 
+            data: { order: _order} 
         }).then(function successCallback(response) {
             debugger;
             $scope.orders = response.data;

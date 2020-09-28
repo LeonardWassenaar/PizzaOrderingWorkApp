@@ -103,17 +103,17 @@
 </html>
 
 <script>
-   
-    function ClearFields() {
+
+    //Clear input fields
+    function ClearFields() {      
         document.getElementById("Name").value = "";
         document.getElementById("Pizza").value = "";
         document.getElementById("Drink").value = "";    
     }
+    //Check for input field values
         function ConfirmOrder() {
-
             var piz = document.getElementById('Pizza');
             var drk = document.getElementById('Drink');
-
 
             var resultPizza = piz.options[piz.selectedIndex].text.length;
             var resultDrink = drk.options[drk.selectedIndex].text.length;
@@ -121,6 +121,10 @@
             if (document.getElementById("Name").value.length == 0 || resultPizza < 1 || resultDrink < 1)
             {
                 window.alert('Please fill out all required fields');
-            }       
+            }
+            else
+            {
+                window.confirm("Confirm order details")
+            }
         }
 </script>
